@@ -86,6 +86,18 @@ body {
   font-size: 17px;
   font-weight: 700;
 }
+.subfolder-name-b {
+  text-decoration: none;
+  color: rgb(188, 211, 255);
+}
+.element {
+  margin-left: 25px;
+  margin-top: 5px;
+}
+.element-link {
+  text-decoration: none;
+  color: rgb(188, 211, 255);
+}
 @media (max-width: 829px) {
   .mobile-warning {
     display: flex;
