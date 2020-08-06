@@ -1,0 +1,132 @@
+body {
+  background-color: rgb(43, 40, 40);
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  padding-top: 10px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-warning {
+  display: none;
+}
+.header-left {
+  display: flex;
+}
+.logo {
+  width: 50px;
+  margin-left: 30px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.site-name {
+  font-size: 30px;
+  margin-left: 15px;
+  font-weight: 700;
+  margin-top: 9px;
+}
+.site-subname {
+  margin-left: 15px;
+  margin-top: 7px;
+  color: #9e9e9e;
+}
+.navigation {
+  margin-top: 13px;
+  display: flex;
+}
+.navigation-link-pda {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px;
+  background-color: rgb(199, 199, 199);
+  border-radius: 30px 30px 30px 30px;
+}
+.navigation-link-tg {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px 30px 30px 30px;
+}
+.navigation-link-git {
+  text-decoration: none;
+  color: #9e9e9e;
+  margin-right: 20px;
+  font-size: 15px;
+  padding: 5px;
+}
+.navigation-link-autor {
+  text-decoration: none;
+  color: #9e9e9e;
+  font-size: 15px;
+  padding: 5px;
+}
+.container {
+  margin: auto;
+  max-width: 90%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.folder-name {
+  margin-top: 25px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.subfolder {
+  margin-left: 25px;
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 700;
+}
+@media (max-width: 829px) {
+  .mobile-warning {
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    padding-top: 0;
+  }
+  .mobile-warning-text {
+    margin-top: 0;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid red;
+    border-top: 0;
+    background-color: rgb(24, 24, 24);
+    border-radius: 0px 0px 30px 30px;
+  }
+  .logo {
+    width: 35px;
+    height: 35px;
+    margin-top: 7px;
+  }
+  .navigation {
+    max-width: 150px;
+    display: table-column;
+  }
+  .navigation-link-tg {
+    margin-bottom: 15px;
+    margin-right: 5px;
+  }
+  .navigation-link-pda {
+    margin-right: 5px;
+  }
+  .nav-two {
+    margin-top: 12px;
+  }
+  .navigation-link-git {
+    margin-left: 28px;
+  }
+  .navigation-link-autor {
+    margin-left: 14px;
+  }
+}
