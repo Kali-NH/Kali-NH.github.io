@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.mobile-warning {
+.alt-navigation {
   display: none;
 }
 .header-left {
@@ -102,23 +102,6 @@ body {
   color: rgb(188, 211, 255);
 }
 @media (max-width: 829px) {
-  .mobile-warning {
-    display: flex;
-    justify-content: center;
-  }
-  body {
-    padding-top: 0;
-  }
-  .mobile-warning-text {
-    margin-top: 0;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 1px solid red;
-    border-top: 0;
-    background-color: rgb(24, 24, 24);
-    border-radius: 0px 0px 30px 30px;
-  }
   .logo {
     width: 35px;
     height: 35px;
@@ -139,9 +122,63 @@ body {
     margin-top: 12px;
   }
   .navigation-link-git {
-    margin-left: 28px;
+    margin-left: 25px;
   }
   .navigation-link-autor {
     margin-left: 14px;
+  }
+}
+@media (max-width: 699px) {
+  .navigation {
+    display: none;
+  }
+
+  .alt-navigation {
+    display: flex;
+
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .nav-two {
+    margin-top: 0;
+  }
+  .navigation-link-autor {
+    margin: 0;
+    margin-right: 5px;
+  }
+  .navigation-link-git {
+    margin: 0;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 499px) {
+  .logo {
+    margin-left: 0;
+  }
+  .element {
+    margin-top: 7px;
+  }
+  .header-left {
+    margin: auto;
+  }
+  .site-name {
+    margin-top: 14px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .site-subname {
+    display: none;
+  }
+  .navigation-link-git,
+  .navigation-link-autor,
+  .navigation-link-pda,
+  .navigation-link-tg {
+    font-size: 12px;
+  }
+  .container {
+    padding-top: 30px;
+  }
+  .element-link {
+    font-size: 15px;
   }
 }
