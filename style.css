@@ -26,6 +26,9 @@ body {
   margin-left: 15px;
   font-weight: 700;
   margin-top: 9px;
+
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 .site-subname {
   margin-left: 15px;
