@@ -109,17 +109,7 @@ body {
   text-decoration: none;
   color: rgb(188, 211, 255);
 }
-.promo {
-  margin: auto;
-}
-.promo-img {
-  display: block;
-  height: 200px;
-  margin-bottom: 100px;
-}
-.container {
-  display: flex;
-}
+
 
 @media (max-width: 829px) {
   .logo {
@@ -146,9 +136,6 @@ body {
   }
   .navigation-link-autor {
     margin-left: 14px;
-  }
-  .promo {
-    display: none;
   }
 }
 @media (max-width: 699px) {
