@@ -93,6 +93,14 @@ body {
   text-decoration: none;
   color: rgb(188, 211, 255);
 }
+.category {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.category-name {
+  font-size: 16px;
+  font-weight: 700;
+}
 .element {
   margin-left: 25px;
   margin-top: 5px;
@@ -180,5 +188,31 @@ body {
   }
   .element-link {
     font-size: 15px;
+  }
+}
+@media (max-width: 250px) {
+  .logo,
+  .navigation-link-git,
+  .navigation-link-autor {
+    display: none;
+  }
+  .header-left {
+    margin: auto;
+  }
+  .site-name {
+    font-size: 13px;
+  }
+  .folder-name {
+    font-size: 13px;
+  }
+  .subfolder-name-b,
+  .subfolder-name {
+    font-size: 12px;
+  }
+  .category-name {
+    font-size: 10px;
+  }
+  .element-link {
+    font-size: 8px;
   }
 }
