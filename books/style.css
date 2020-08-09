@@ -185,6 +185,13 @@ body {
   .navigation-link-autor {
     margin-left: 14px;
   }
+  .books-photo-f {
+    height: 400px;
+    margin: auto;
+  }
+  .subphotos {
+    display: none;
+  }
 }
 @media (max-width: 699px) {
   .navigation {
