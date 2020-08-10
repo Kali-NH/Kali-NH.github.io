@@ -102,13 +102,17 @@ body {
   border: solid 1px white;
   border-radius: 15px 15px 15px 15px;
   padding: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 75px;
 }
 .book-name {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-
+  font-size: 20px;
+  font-weight: 700;
+}
+.book-subname {
+  text-align: center;
   font-size: 20px;
   font-weight: 700;
 }
@@ -125,9 +129,32 @@ body {
   border-radius: 5px 5px 5px 5px;
   height: 150px;
 }
+.hidden-subphotos {
+  display: none;
+}
+.hidden-subphotos + label ~ div {
+  display: none;
+}
+/* оформляем текст label */
+.hidden-subphotos + label {
+  color: gray;
+}
+/* вид текста label при активном переключателе */
+.hidden-subphotos:checked + label {
+  color: white;
+  font-weight: 700;
+  border: 1px solid white;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hidden-subphotos:checked + label + div {
+  display: block;
+
+  margin-top: 12px;
+}
+
 .bar {
   margin-top: 10px;
-  padding-top: 10px;
+  padding-top: 13px;
 
   border-top: 1px solid white;
   display: flex;
@@ -158,6 +185,9 @@ body {
   height: 40px;
   margin-right: 10px;
 }
+.mobile-photos {
+  display: none;
+}
 
 @media (max-width: 829px) {
   .logo {
@@ -185,12 +215,34 @@ body {
   .navigation-link-autor {
     margin-left: 14px;
   }
+
+  .photos {
+    display: block;
+    text-align: center;
+
+    margin-bottom: 20px;
+  }
   .books-photo-f {
     height: 400px;
-    margin: auto;
+    margin-right: 0;
+    margin-bottom: 5px;
   }
   .subphotos {
     display: none;
+  }
+  .mobile-photos {
+    display: block;
+    text-align: center;
+  }
+  .hidden-button {
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    border: dotted 1px gray;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 13px;
   }
 }
 @media (max-width: 699px) {
